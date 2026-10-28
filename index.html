@@ -175,6 +175,25 @@ li[data-err="1"] .t { color: var(--dim); text-decoration: line-through; animatio
 
 .end { color: var(--dim); font-size: 20px; letter-spacing: .14em; text-transform: uppercase; text-align: center; }
 
+/* ── СТРОКА СОЗДАТЕЛЯ ── */
+.credits {
+  text-align: center;
+  margin-top: -15px;
+}
+.credits a {
+  color: var(--dim);
+  font-size: 15px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity .15s ease, color .15s ease;
+}
+.credits a:hover {
+  opacity: 1;
+  color: var(--bone);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .meta b, li:hover .t, li:focus-visible .t, h1 .tall::before, h1 .tall::after,
   body::before, #rollband { animation: none !important; }
@@ -213,6 +232,9 @@ li[data-err="1"] .t { color: var(--dim); text-decoration: line-through; animatio
     <li tabindex="0" role="button" aria-pressed="false"><span class="n">09</span><span class="t tall">hbd</span><i class="bar"></i></li>
   </ol>
 
+  <div class="credits">
+    <a href="https://www.tiktok.com/@talant1ch?_r=1&_t=ZS-9AwD1cu7ZDw" target="_blank" rel="noopener">SITE / CREATED</a>
+  </div>
 </div>
 
 <script>
